@@ -1,11 +1,11 @@
-# Project Roadmap
+﻿# Project Roadmap
 
 This is what I'm building and what I plan to build next. Each project lists its goal, tech stack, planned features and current status.
 
 | Project | Area | Status |
 |---|---|---|
 | [Shipment Assistant](#shipment-assistant) | AI / Backend | 🟡 In progress |
-| [AWS Serverless Infrastructure with Terraform](#aws-serverless-infrastructure-with-terraform) | Cloud / DevOps | ✅ First version done ([repo](https://github.com/CodingAccountNick/AWS-Terraform)) |
+| [AWS Serverless Infrastructure with Terraform](#aws-serverless-infrastructure-with-terraform) | Cloud / DevOps | ✅ First version done ([repo](https://github.com/CodingAccountNick/aws-serverless-terraform)) |
 
 ---
 
@@ -30,7 +30,7 @@ An AI assistant that answers questions about shipments in plain language: where 
 
 Infrastructure as code for a serverless backend on AWS, built from reusable Terraform modules.
 
-**Repo:** [CodingAccountNick/AWS-Terraform](https://github.com/CodingAccountNick/AWS-Terraform)
+**Repo:** [CodingAccountNick/aws-serverless-terraform](https://github.com/CodingAccountNick/aws-serverless-terraform)
 
 **Tech stack:** Terraform, AWS (Lambda, IAM, S3), Node.js, GitHub Actions
 
@@ -38,13 +38,13 @@ Infrastructure as code for a serverless backend on AWS, built from reusable Terr
 - [x] Remote Terraform state stored in S3
 - [x] Reusable module for the IAM role that Lambda functions run under
 - [x] Reusable Lambda module, used to deploy an auth handler written in Node.js
-- [x] GitHub Actions pipeline that ran `terraform init`, `fmt -check`, `validate` and `plan` on every push to `main`, with AWS credentials kept in GitHub Secrets
+- [x] GitHub Actions pipeline that runs `terraform init`, `fmt -check`, `validate` and `plan` on every push to `main`, with AWS credentials kept in GitHub Secrets
 
 **Next steps**
 - [ ] API Gateway in front of the Lambda functions
 - [ ] Authentication with Amazon Cognito
 - [ ] Separate dev and prod environments
-- [ ] Bring the CI pipeline back, with a manually approved `apply` step
+- [ ] Add a manually approved `apply` step to the CI pipeline
 
 ---
 
