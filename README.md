@@ -4,7 +4,7 @@ This is what I'm building and what I plan to build next. Each project lists its 
 
 | Project | Area | Status |
 |---|---|---|
-| [Shipment Assistant](#shipment-assistant) | AI / Backend | 🟡 In progress |
+| [Shipment Assistant](#shipment-assistant) | AI / Backend | 🟡 In progress ([repo](https://github.com/CodingAccountNick/shipment-assistant)) |
 | [AWS Serverless Infrastructure with Terraform](#aws-serverless-infrastructure-with-terraform) | Cloud / DevOps | ✅ First version done ([repo](https://github.com/CodingAccountNick/aws-serverless-terraform)) |
 
 ---
@@ -13,7 +13,9 @@ This is what I'm building and what I plan to build next. Each project lists its 
 
 An AI assistant that answers questions about shipments in plain language: where a package is, when it will arrive, and why it's delayed.
 
-**Tech stack:** Python, FastAPI, Ollama (Llama 3.2, run locally)
+**Repo:** [CodingAccountNick/shipment-assistant](https://github.com/CodingAccountNick/shipment-assistant)
+
+**Tech stack:** Python, FastAPI, Ollama (Llama 3.2, run locally), .NET (Visual Studio solution, planned)
 
 **Done so far**
 - [x] Script that sends a question to a locally hosted Llama 3.2 model and returns its answer
